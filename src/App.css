@@ -1,38 +1,147 @@
-.App {
-  text-align: center;
+
+.container {
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.jumbotron {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: 600px;
+    text-align: center;
+    align-items: center;
+    background: linear-gradient(45deg, #124552, #00c4ba);
+    border-radius: 20px;
+    color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.jumbotron button{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.jumbotron h1{
+    color: white;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+.features input{
+    width: 700px;
+    max-width: 700px;
+}
+
+.features{
+    justify-content: space-around;
+}
+
+
+
+.linha-horizontal {
+    border: 1px solid rgb(238, 238, 238);
+    width: 400px;
+   
   }
+
+.resultado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.conditions{
+    display: flex;
+    padding-left: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.last-box_umidity{
+    padding-top: 50px;
+    padding-right: 20px;
+}
+.last-box_wind{
+    padding-top: 50px;
+    padding-left: 20px;
+}
+.last-box_umidity p{
+    font-size: 25px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.last-box_wind p {
+    font-size: 25px;
 }
+
+.last-box i{
+    font-size: 20px;
+    margin-right: 10px;
+    padding-top: 10px;
+}
+
+.conditions hr{
+    height: 90px;
+    border: 1px solid rgb(238, 238, 238);
+}
+
+
+
+@media (max-width:576px){
+    .jumbotron{
+        width: 200px;
+        height: 670px;
+    }
+
+    .features input{
+        width: 100px;
+        align-items: center;
+        margin-left: 30px;
+    }
+   
+    .linha-horizontal {
+        
+        width: 100px;
+       
+      }
+      .last-box_umidity p{
+        font-size: 20px;
+    }
+    
+    .last-box_wind p {
+        font-size: 20px;
+    }
+    
+    .last-box i{
+        font-size: 20px;
+        padding-top: 10px;
+    }
+    
+    .conditions hr{
+        height: 140px;
+        border: 1px solid rgb(238, 238, 238);
+    }
+}
+
+@media (min-width: 576px) and (max-width:767.98px){
+    .jumbotron{
+        width: 400px;
+        
+    }
+
+    .features input{
+        width: 250px;
+        align-items: center;
+        margin-left: 30px;
+    }
+   
+    .linha-horizontal {
+        
+        width: 290px;
+       
+      }
+    
+}  
+
+
